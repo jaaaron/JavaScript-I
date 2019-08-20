@@ -18,7 +18,7 @@ const example = {
 }
 
 // Write your intern objects here:
-const interns = {
+const interns = [
   {
     "id": 1,
     "name": "Mitzi",
@@ -51,10 +51,11 @@ const interns = {
     "name": "Antonietta",
     "email": "adaine5@samsung.com",
     "gender": "F",
-    "multiplyNums": function(num1, num2){
+    "multiplyNums": function(num1, num2) {
       console.log(num1 * num2);
+    }
   }
-}
+]
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
