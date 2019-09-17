@@ -18,65 +18,64 @@ const example = {
 }
 
 // Write your intern objects here:
-const interns = [
+const intern1 = 
   {
     "id": 1,
-    "name": "Mitzi",
     "email": "mmelloy0@psu.edu",
-    "gender": "F"
-  },
-  {
-    "id": 2,
-    "name": "Kennan",
-    "email": "kdiben1@tinypic.com",
-    "gender": "M",
-    "speak": function() {
-      console.log(`Hello, my name is ${this.name}`);
-    } 
-  },
-  {
-    "id": 3,
-    "name": "Keven",
-    "email": "kmummery2@wikimedia.org",
-    "gender": "M"
-  },
-  {
-    "id": 4,
-    "name": "Gannie",
-    "email": "gmartinson3@illinois.edu",
-    "gender": "M"
-  },
-  {
-    "id": 5,
-    "name": "Antonietta",
-    "email": "adaine5@samsung.com",
+    "first_name": "Mitzi",
     "gender": "F",
-    "multiplyNums": function(num1, num2) {
-      console.log(num1 * num2);
-    }
   }
-]
+  let intern2 = {
+    "id": 2,
+    "email": "kdiben1@tinypic.com",
+    "first_name": "Kennan",
+    "gender": "M",
+  }
+  const intern3 = {
+    "id": 3,
+    "email": "kmummery2@wikimedia.org",
+    "first_name": "Keven",
+    "gender": "M",
+  }
+  const intern4 = {
+    "id": 4,
+    "email": "gmartinson3@illinois.edu",
+    "first_name": "Gannie",
+    "gender": "M",
+  }
+  const intern5 = {
+    "id": 5,
+    "email": "adaine5@samsung.com",
+    "first_name": "Antonietta",
+    "gender": "F",
+  }
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
 // Mitzi's name
-console.log(interns[0].name);
+console.log(intern1.first_name)
+console.log(intern1["first_name"])
 // Kennan's ID
-console.log(interns[1].id);  
+console.log(intern2.id)
+console.log(intern2["id"])
 // Keven's email
-console.log(interns[2].email);
+console.log(intern3.email)
+console.log(intern3["email"])
 // Gannie's name
-console.log(interns[3].name);
+console.log(intern4.first_name)
+console.log(intern4["first_name"])
 // Antonietta's Gender
-console.log(interns[4].gender);
+console.log(intern5.gender)
+console.log(intern5["gender"])
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-console.log(interns[1].speak());
+intern2.speak = "Hello, my name is Kennan!";
+console.log(intern2.speak)
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(interns[4].multiplyNums(3,4));
+intern5.multiplyNums = function(n1,n2){return n1*n2}
+console.log(intern5.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
